@@ -139,9 +139,9 @@ with open(archivo_links) as archivo:
 
             except TimeoutException:
                 if nuevo == 1:
-                    print('Timeout en propiedad nueva id ' + id_aviso + ', url culpable: ' + url)
+                    print('Timeout en propiedad nueva, id ' + id_aviso + ', url culpable: ' + url)
                 else:
-                    print('Timeout en propiedad usada id ' + id_aviso + ', url culpable: ' + url)
+                    print('Timeout en propiedad usada, id ' + id_aviso + ', url culpable: ' + url)
                 pass
 
 archivo.close()
