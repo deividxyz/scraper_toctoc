@@ -41,9 +41,9 @@ chrome_prefs["profile.default_content_settings"] = {"images": 2}
 chrome_prefs["profile.managed_default_content_settings"] = {"images": 2}
 
 """
-Definimos opciones en este bloque
+Definimos opciones en este bloque, las que leímos con argparse
 archivo_links: ruta al archivo .csv de los links, creado por el otro script
-salida: nombre de carpeta en donde se guardarán los JSON descargados. Si no existe, será creada. Por defecto, se guarda en la misma ruta del script. 
+salida: ruta donde se guardaran los queridos json 
 """
 
 parser = argparse.ArgumentParser(description="Procesa la lista de links TocToc hacia archivos JSON")
