@@ -129,11 +129,11 @@ with open(archivo_links) as archivo:
 
                     print('Guardando JSON propiedad nueva, id ' + str(id_aviso) + ' ...')
                     with open(salida + '/nuevas/'+str(id_aviso) + '.json','w') as salida_json:
-                        json.dump(respuesta_json,salida_json,ensure_ascii=False)
+                        json.dump(respuesta_json,salida_json,ensure_ascii=False, indent=4)
                 else:
                     print('Guardando JSON propiedad usada, id ' + str(id_aviso) + ' ...')
                     with open(salida + '/usadas/' + str(id_aviso) + '.json','w') as salida_json:
-                        json.dump(respuesta_json,salida_json,ensure_ascii=False)
+                        json.dump(respuesta_json,salida_json,ensure_ascii=False, indent=4)
 
                 # el json obtenido tiene toda la data de los avisos!
 
